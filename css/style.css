@@ -1,0 +1,46 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: #31A5AC;
+    font-weight: bolder;
+    font-size: 50px;
+}
+.logo-image{
+    width: 4%;
+    height: 4%;
+}
+.footer-image{
+    width: 5%;
+    height: 2%;
+    border-radius: 50%;
+}
+
+/* error throw style */
+.notify {
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    background: #222436;
+    margin-top: 20px;
+    border-radius: 15px;
+    padding: 5px 20px;
+    display: none;
+}
+.notify-section{
+    width: 35%;
+    margin: 0 auto;
+}
+/* input field style */
+.input-style{
+    background-color: #DCDCDC !important;
+    font-size: 16px;
+    border-radius: 3px;
+}
+.right-block{
+    background-color: #F8F8F8;
+}
+.error-throw{
+    display: none;
+}

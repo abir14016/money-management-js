@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- head section -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>money management</title>
+    <!-- fabicon  -->
+    <link rel="shortcut icon" href="images/money-logo.png" type="image/x-icon">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- head section -->
+<body>
+    <!-- header section -->
+    <header class="mt-5">
+        <h1 class="text-center">Money Management<img class="logo-image" src="images/money-logo.png" alt=""></h1>
+        <h5 class="text-center">manage money for your secured future</h5>
+    </header>
+    <!-- header section -->
+
+    <!-- main section -->
+    <main>
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-sm-2 gx-5">
+                <!-- left column -->
+              <div class="col">
+               <div class=" border py-5">
+                   <img class="w-100 main-image" src="images/savings.jpg" alt="">
+               </div>
+              </div>
+              <!-- left column -->
+
+
+              <!-- right column -->
+              <div class="col">
+                <div class="border text-center pt-5 pb-4 right-block">
+                    <div id="income-section">
+                        <h4 class="mb-3">Income</h4>
+                        <h5><span class="me-4">Income:</span><input id="income-field" class="bg-light border-0 text-center p-2 input-style" type="text" placeholder="your income per month"><button id="error-throw-income" class="btn bg-white text-danger fw-bolder error-throw">X</button></h5>
+                    </div>
+                    <div id="expenses-section" class="mt-4">
+                        <h4>Expenses</h4>
+                        <h5 class="mt-4"><span class="me-4">Food:</span><input id="food-field" class="bg-light border-0 text-center p-2 input-style" type="text" placeholder="food cost per month"><button id="error-throw-food" class="btn bg-white text-danger fw-bolder error-throw">X</button></h5>
+
+                        <h5 class="mt-4"><span class="me-4">Rent:</span><input id="rent-field" class="bg-light border-0 text-center p-2 input-style" type="text" placeholder="rent cost per month"><button id="error-throw-rent" class="btn bg-white text-danger fw-bolder error-throw">X</button></h5>
+
+                        <h5 class="mt-4"><span class="me-4">Clothes:</span><input id="clothes-field" class="bg-light border-0 text-center p-2 input-style" type="text" placeholder="cloth cost per month"><button id="error-throw-clothes" class="btn bg-white text-danger fw-bolder error-throw">X</button></h5>
+                    </div>
+                    <div id="balance-calculation" class="mt-4">
+                        <button id="calculation-button" class="btn btn-primary px-5 py-2 fs-5 fw-bold">Calculate</button>
+                        <h4 class="mt-4">Total Expenses:<span  id="total-expense" class="ms-2"></span></h4>
+                        <h4>Balance:<span id="balance" class="ms-2"></span></h4>
+                    </div>
+                    <div id="saving-section" class="mt-4">
+                        <h5><span class="me-4">Save:</span><input id="save-parcent-Field" class="bg-light border-0 text-center px-2 py-3 w-25 input-style" type="text" placeholder="saving %"><button id="error-throw-savings" class="btn bg-white text-danger fw-bolder error-throw">X</button><span class="mx-4">%</span><span><button id="save-button" class="btn btn-primary px-5 py-2 fs-5 fw-bold">Save</button></span></h5>
+                    </div>
+                    <div id="saving-calculation" class="mt-4">
+                        <h4>Saving Amount:<span id="saving-field" class="ms-2"></span></h4>
+                        <h4>Remaining Balance:<span id="remaining-field" class="ms-2"></span></h4>
+                    </div>
+                </div>
+              </div>
+              <!-- right column -->
+            </div>
+        </div>
+
+        <!-- error showing section -->
+        <div class="notify-section mb-5">
+            <p id="excesssive-expense" class="notify">❌ You can't expense more than your income</p>
+            <p id="excesssive-saving" class="notify">❌ You can't save more than 100% or less than 0%</p>
+            <p id="excesssive-saving-2" class="notify">❌ You can't save more than your balance</p>
+            <p id="not-a-number" class="notify">❌ Wrong input!! Plz provide a valid input</p>
+            <p id="negative" class="notify">❌ Wrong input!! Plz provide a positive input</p>
+        </div>
+        <!-- error showing section -->
+    </main>
+    <!-- main section -->
+
+    <!-- footer section -->
+    <footer class="my-5">
+        <div class="text-center">
+            <img class="footer-image" src="images/abir(2).jpg" alt="">
+            <h6 class="text-center text-secondary p-3">All rights reserved & developed by @Abir14016</h6>
+        </div>
+    </footer>
+    <!-- footer section -->
+
+    <!-- bootstrap script file -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- external script file -->
+    <script src="js/script.js"></script>
+</body>
+</html>
